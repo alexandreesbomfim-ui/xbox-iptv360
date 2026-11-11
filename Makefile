@@ -36,7 +36,7 @@ all: $(BUILD)
 
 $(BUILD):
 > @[ -d $@ ] || mkdir -p $@
-> @$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $(TARGET).elf32
+> @$(MAKE) --no-print-directory -C $(BUILD) -f $(CURDIR)/Makefile $(OUTPUT).elf32
 
 clean:
 > @echo clean ...
